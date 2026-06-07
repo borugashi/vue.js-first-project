@@ -6,14 +6,14 @@
         <router-link to="/" class="text-3xl font-serif font-bold text-gray-900">Мускул</router-link>
 
         <!-- Десктоп меню -->
-        <div class="hidden lg:flex gap-8">
-          <router-link to="/" class="text-sm text-gray-700 hover:text-[#1A6B54] transition">Главная</router-link>
-          <router-link to="/about" class="text-sm text-gray-700 hover:text-[#1A6B54] transition">О нас</router-link>
-          <router-link to="/catalog" class="text-sm text-gray-700 hover:text-[#1A6B54] transition">Новинки</router-link>
-          <router-link to="/catalog" class="text-sm text-gray-700 hover:text-[#1A6B54] transition">Популярное</router-link>
-          <router-link to="/catalog" class="text-sm text-gray-700 hover:text-[#1A6B54] transition">Отзывы</router-link>
-          <router-link to="/contacts" class="text-sm text-gray-700 hover:text-[#1A6B54] transition">Контакты</router-link>
-        </div>
+        <nav class="hidden md:flex gap-8">
+          <router-link to="/" class="text-gray-700 hover:text-[#196950] transition">Главная</router-link>
+          <router-link to="/#about" class="text-gray-700 hover:text-[#196950] transition">О нас</router-link>
+          <router-link to="/#new" class="text-gray-700 hover:text-[#196950] transition">Новинки</router-link>
+          <router-link to="/#popular" class="text-gray-700 hover:text-[#196950] transition">Популярное</router-link>
+          <router-link to="/#reviews" class="text-gray-700 hover:text-[#196950] transition">Отзывы</router-link>
+          <router-link to="/#contacts" class="text-gray-700 hover:text-[#196950] transition">Контакты</router-link>
+        </nav>
 
         <!-- Иконки -->
         <div class="flex gap-4 items-center">
@@ -27,18 +27,28 @@
             </svg>
           </button>
           <button class="text-gray-700 hover:text-[#1A6B54] transition relative">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
-              />
-            </svg>
-            <span
-              class="absolute -top-1 -right-1 w-4 h-4 bg-[#1A6B54] text-white text-[10px] rounded-full flex items-center justify-center"
-            >
-              0
-            </span>
+            <router-link to="/cart" class="relative">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+                />
+              </svg>
+              <span
+                v-if="totalCount > 0"
+                class="absolute -top-2 -right-2 bg-[#196950] text-white text-xs w-5 h-5 rounded-full flex items-center justify-center"
+              >
+                {{ totalCount }}
+              </span>
+            </router-link>
           </button>
 
           <!-- Бургер для мобильных -->
@@ -52,12 +62,12 @@
 
       <!-- Мобильное меню -->
       <div v-if="menuOpen" class="lg:hidden mt-4 pb-4 flex flex-col gap-3">
-        <router-link to="/" class="text-sm text-gray-700 hover:text-[#1A6B54] transition">Главная</router-link>
-        <router-link to="/about" class="text-sm text-gray-700 hover:text-[#1A6B54] transition">О нас</router-link>
-        <router-link to="/catalog" class="text-sm text-gray-700 hover:text-[#1A6B54] transition">Новинки</router-link>
-        <router-link to="/catalog" class="text-sm text-gray-700 hover:text-[#1A6B54] transition">Популярное</router-link>
-        <router-link to="/catalog" class="text-sm text-gray-700 hover:text-[#1A6B54] transition">Отзывы</router-link>
-        <router-link to="/contacts" class="text-sm text-gray-700 hover:text-[#1A6B54] transition">Контакты</router-link>
+        <router-link to="/" class="text-gray-700 hover:text-[#196950] transition">Главная</router-link>
+        <router-link to="/#about" class="text-gray-700 hover:text-[#196950] transition">О нас</router-link>
+        <router-link to="/#new" class="text-gray-700 hover:text-[#196950] transition">Новинки</router-link>
+        <router-link to="/#popular" class="text-gray-700 hover:text-[#196950] transition">Популярное</router-link>
+        <router-link to="/#reviews" class="text-gray-700 hover:text-[#196950] transition">Отзывы</router-link>
+        <router-link to="/#contacts" class="text-gray-700 hover:text-[#196950] transition">Контакты</router-link>
       </div>
     </nav>
   </header>
@@ -67,4 +77,7 @@
 import { ref } from "vue";
 
 const menuOpen = ref(false);
+
+import { useCart } from "@/composables/useCart";
+const { totalCount } = useCart();
 </script>

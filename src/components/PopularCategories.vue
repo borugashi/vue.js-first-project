@@ -5,9 +5,10 @@
 
       <!-- Сетка 4 колонки на десктопе -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
-        <!-- Протеин (занимает 2 колонки) -->
-        <div
-          class="lg:col-span-2 rounded-4xl border-3 border-[#196950] p-6 flex flex-col md:flex-row gap-6 items-center hover:shadow-2xl transition"
+        <!-- Протеин (2 колонки) -->
+        <router-link
+          to="/catalog?category=1"
+          class="lg:col-span-2 rounded-4xl border-3 border-[#196950] p-6 flex flex-col md:flex-row gap-6 hover:shadow-2xl transition block"
         >
           <div class="flex-1">
             <p class="text-lg md:text-xl font-bold text-gray-900 mb-4">Протеин</p>
@@ -20,29 +21,39 @@
             </ul>
           </div>
           <img src="/imgs/category-protein.png" alt="Протеин" class="w-40 h-40 md:w-48 md:h-48 object-contain flex-shrink-0" />
-        </div>
+        </router-link>
 
         <!-- Витамины -->
-        <div class="bg-[#196950] rounded-4xl p-6 flex flex-col items-center justify-center text-white hover:shadow-2xl transition">
+        <router-link
+          to="/catalog?category=2"
+          class="bg-[#196950] rounded-4xl p-6 flex flex-col items-center justify-center text-white hover:shadow-2xl transition block"
+        >
           <p class="text-lg md:text-xl font-bold mb-4 text-center">Витамины</p>
           <img src="/imgs/category-vitamins.png" alt="Витамины" class="w-32 h-32 md:w-40 md:h-40 object-contain" />
-        </div>
+        </router-link>
 
         <!-- Аминокислоты -->
-        <div class="rounded-4xl border-3 border-[#196950] p-6 flex flex-col items-center justify-center hover:shadow-2xl transition">
+        <router-link
+          to="/catalog?category=3"
+          class="rounded-4xl border-3 border-[#196950] p-6 flex flex-col items-center justify-center hover:shadow-2xl transition block"
+        >
           <p class="text-lg md:text-xl font-bold text-gray-900 mb-4 text-center">Аминокислоты</p>
           <img src="/imgs/category-amino.png" alt="Аминокислоты" class="w-32 h-32 md:w-40 md:h-40 object-contain" />
-        </div>
+        </router-link>
 
         <!-- Креатин -->
-        <div class="bg-[#196950] rounded-4xl p-6 flex flex-col items-center justify-center text-white hover:shadow-2xl transition">
+        <router-link
+          to="/catalog?category=4"
+          class="bg-[#196950] rounded-4xl p-6 flex flex-col items-center justify-center text-white hover:shadow-2xl transition block"
+        >
           <p class="text-lg md:text-xl font-bold mb-4 text-center">Креатин</p>
           <img src="/imgs/category-creatine.png" alt="Креатин" class="w-32 h-32 md:w-40 md:h-40 object-contain" />
-        </div>
+        </router-link>
 
-        <!-- Предтренировочный комплекс (занимает 2 колонки) -->
-        <div
-          class="lg:col-span-2 rounded-4xl border-3 border-[#196950] p-6 flex flex-col md:flex-row gap-6 items-center hover:shadow-2xl transition"
+        <!-- Предтрен (2 колонки) -->
+        <router-link
+          to="/catalog?category=5"
+          class="lg:col-span-2 rounded-4xl border-3 border-[#196950] p-6 flex flex-col md:flex-row gap-6 items-center hover:shadow-2xl transition block"
         >
           <div class="flex-1">
             <p class="text-lg md:text-xl font-bold text-gray-900 mb-4">Предтренировочный комплекс</p>
@@ -59,13 +70,16 @@
             alt="Предтренировочный комплекс"
             class="w-40 h-40 md:w-48 md:h-48 object-contain flex-shrink-0"
           />
-        </div>
+        </router-link>
 
         <!-- Другие категории -->
-        <div class="bg-[#196950] rounded-4xl p-6 flex flex-col items-center justify-center text-white hover:shadow-2xl transition">
+        <router-link
+          to="/catalog?category=6"
+          class="bg-[#196950] rounded-4xl p-6 flex flex-col items-center justify-center text-white hover:shadow-2xl transition block"
+        >
           <p class="text-lg md:text-xl font-bold mb-4 text-center">Другие категории</p>
           <img src="/imgs/category-other.png" alt="Другие категории" class="w-32 h-32 md:w-40 md:h-40 object-contain" />
-        </div>
+        </router-link>
       </div>
 
       <div class="text-center mt-12">

@@ -1,11 +1,26 @@
 <template>
   <div>
     <HeroSection />
-    <AboutSection />
-    <NewProducts />
-    <PopularCategories />
-    <ReviewsSection />
-    <ContactsSection />
+
+    <div id="about">
+      <AboutSection />
+    </div>
+
+    <div id="new">
+      <NewProducts />
+    </div>
+
+    <div id="popular">
+      <PopularCategories />
+    </div>
+
+    <div id="reviews">
+      <ReviewsSection />
+    </div>
+
+    <div id="contacts">
+      <ContactsSection />
+    </div>
   </div>
 </template>
 

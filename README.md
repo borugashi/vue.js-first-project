@@ -1,3 +1,3 @@
 # vue.js-first-project
 
-sports nutrition website template
+A university project for a sports nutrition website using Vue.js, TailwindCSS, Axios, and simple server calls (GET requests)

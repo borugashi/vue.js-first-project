@@ -1,8 +1,8 @@
 <template>
-  <div class="rounded-4xl p-4 flex flex-col hover:shadow-2xl transition">
+  <router-link :to="`/products/${product.id}`" class="rounded-4xl p-4 flex flex-col hover:shadow-2xl transition">
     <!-- Картинка + избранное -->
     <div class="relative mb-4 border-[#196950] border-3 rounded-4xl p-4">
-      <img :src="product.image" :alt="product.name" class="w-full h-48 md:h-56 object-contain" />
+      <img :src="product.image || '/imgs/placeholder-product.png'" :alt="product.name" class="w-full h-48 md:h-56 object-contain" />
       <button class="absolute top-4 right-4 text-[#196950] hover:text-red-500 transition">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
           <path
@@ -21,12 +21,21 @@
     <p class="text-lg md:text-lg font-bold text-gray-900 mb-4">{{ product.price }} ₽</p>
 
     <!-- Кнопка -->
-    <button class="mt-auto bg-[#196950] text-white py-2 rounded-full text-sm hover:bg-[#0F4D3C] transition">В корзину</button>
-  </div>
+    <button @click.stop="handleAddToCart" class="mt-auto bg-[#196950] text-white py-2 rounded-full text-sm hover:bg-[#0F4D3C] transition">
+      В корзину
+    </button>
+  </router-link>
 </template>
 
 <script setup>
-defineProps({
+import { useCart } from "@/composables/useCart";
+
+const props = defineProps({
   product: Object,
 });
+
+const { addToCart } = useCart();
+const handleAddToCart = () => {
+  addToCart(props.product);
+};
 </script>
