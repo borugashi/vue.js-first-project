@@ -22,7 +22,7 @@
 
       <!-- Соцсети -->
       <div class="flex gap-10 pt-4 justify-end">
-        <!-- Telegram -->
+        <!-- TG -->
         <a href="#" class="w-8 h-8 rounded-full flex items-center justify-center hover:bg-[#01b57c] transition">
           <img src="/icons/telegram.svg" alt="Telegram" class="w-full h-full" />
         </a>

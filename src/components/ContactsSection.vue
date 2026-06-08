@@ -5,7 +5,7 @@
       <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-8 md:mb-12">Контакты</h2>
 
       <div class="flex flex-col lg:flex-row gap-8">
-        <!-- Контактная информация -->
+        <!-- Контакты -->
         <div class="lg:w-1/2 space-y-6">
           <!-- Телефон -->
           <div class="flex items-start gap-4">
@@ -38,7 +38,7 @@
             </div>
           </div>
 
-          <!-- Email -->
+          <!-- почта -->
           <div class="flex items-start gap-4">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
               <path
@@ -54,7 +54,7 @@
 
           <!-- Соцсети -->
           <div class="flex gap-10 pt-4">
-            <!-- Telegram -->
+            <!-- TG -->
             <a href="#" class="w-10 h-10 rounded-full flex items-center justify-center hover:bg-[#01b57c] transition">
               <img src="/icons/telegram.svg" alt="Telegram" class="w-full h-full" />
             </a>

@@ -1,5 +1,5 @@
 <template>
-  <aside class="w-full lg:w-64 flex-shrink-0 space-y-6">
+  <aside class="w-full lg:w-64 shrink-0 space-y-6">
     <!-- Категории -->
     <div>
       <h3 class="text-lg font-bold text-gray-900 mb-3">Категории</h3>
@@ -80,13 +80,6 @@ const priceMin = ref(null);
 const priceMax = ref(null);
 
 onMounted(async () => {
-  try {
-    const response = await getCategories();
-    categories.value = response.data.data || [];
-  } catch (error) {
-    console.error("Ошибка загрузки категорий:", error);
-  }
-
   try {
     const response = await getCategories();
     categories.value = response.data.data || [];

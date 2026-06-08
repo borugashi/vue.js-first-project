@@ -2,10 +2,9 @@
   <header class="bg-white sticky top-0 z-50 shadow-2xs">
     <nav class="max-w-7xl mx-auto px-4 sm:px-6 py-3">
       <div class="flex justify-between items-center">
-        <!-- Логотип -->
         <router-link to="/" class="text-3xl font-serif font-bold text-gray-900">Мускул</router-link>
 
-        <!-- Десктоп меню -->
+        <!-- Десктопное меню -->
         <nav class="hidden md:flex gap-8">
           <router-link to="/" class="text-gray-700 hover:text-[#196950] transition">Главная</router-link>
           <router-link to="/#about" class="text-gray-700 hover:text-[#196950] transition">О нас</router-link>
@@ -51,7 +50,7 @@
             </router-link>
           </button>
 
-          <!-- Бургер для мобильных -->
+          <!-- Бургер-меню для мобилок -->
           <button @click="menuOpen = !menuOpen" class="lg:hidden text-gray-700">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
               <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />

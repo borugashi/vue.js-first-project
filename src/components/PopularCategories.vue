@@ -8,7 +8,7 @@
         <!-- Протеин (2 колонки) -->
         <router-link
           to="/catalog?category=1"
-          class="lg:col-span-2 rounded-4xl border-3 border-[#196950] p-6 flex flex-col md:flex-row gap-6 hover:shadow-2xl transition block"
+          class="lg:col-span-2 rounded-4xl border-3 border-[#196950] p-6 flex flex-col md:flex-row gap-6 hover:shadow-2xl transition"
         >
           <div class="flex-1">
             <p class="text-lg md:text-xl font-bold text-gray-900 mb-4">Протеин</p>
@@ -20,13 +20,13 @@
               <li>Поддержка иммунной системы</li>
             </ul>
           </div>
-          <img src="/imgs/category-protein.png" alt="Протеин" class="w-40 h-40 md:w-48 md:h-48 object-contain flex-shrink-0" />
+          <img src="/imgs/category-protein.png" alt="Протеин" class="w-40 h-40 md:w-48 md:h-48 object-contain shrink-0" />
         </router-link>
 
         <!-- Витамины -->
         <router-link
           to="/catalog?category=2"
-          class="bg-[#196950] rounded-4xl p-6 flex flex-col items-center justify-center text-white hover:shadow-2xl transition block"
+          class="bg-[#196950] rounded-4xl p-6 flex flex-col items-center justify-center text-white hover:shadow-2xl transition"
         >
           <p class="text-lg md:text-xl font-bold mb-4 text-center">Витамины</p>
           <img src="/imgs/category-vitamins.png" alt="Витамины" class="w-32 h-32 md:w-40 md:h-40 object-contain" />
@@ -35,7 +35,7 @@
         <!-- Аминокислоты -->
         <router-link
           to="/catalog?category=3"
-          class="rounded-4xl border-3 border-[#196950] p-6 flex flex-col items-center justify-center hover:shadow-2xl transition block"
+          class="rounded-4xl border-3 border-[#196950] p-6 flex flex-col items-center justify-center hover:shadow-2xl transition"
         >
           <p class="text-lg md:text-xl font-bold text-gray-900 mb-4 text-center">Аминокислоты</p>
           <img src="/imgs/category-amino.png" alt="Аминокислоты" class="w-32 h-32 md:w-40 md:h-40 object-contain" />
@@ -44,7 +44,7 @@
         <!-- Креатин -->
         <router-link
           to="/catalog?category=4"
-          class="bg-[#196950] rounded-4xl p-6 flex flex-col items-center justify-center text-white hover:shadow-2xl transition block"
+          class="bg-[#196950] rounded-4xl p-6 flex flex-col items-center justify-center text-white hover:shadow-2xl transition"
         >
           <p class="text-lg md:text-xl font-bold mb-4 text-center">Креатин</p>
           <img src="/imgs/category-creatine.png" alt="Креатин" class="w-32 h-32 md:w-40 md:h-40 object-contain" />
@@ -53,7 +53,7 @@
         <!-- Предтрен (2 колонки) -->
         <router-link
           to="/catalog?category=5"
-          class="lg:col-span-2 rounded-4xl border-3 border-[#196950] p-6 flex flex-col md:flex-row gap-6 items-center hover:shadow-2xl transition block"
+          class="lg:col-span-2 rounded-4xl border-3 border-[#196950] p-6 flex flex-col md:flex-row gap-6 items-center hover:shadow-2xl transition"
         >
           <div class="flex-1">
             <p class="text-lg md:text-xl font-bold text-gray-900 mb-4">Предтренировочный комплекс</p>
@@ -68,14 +68,14 @@
           <img
             src="/imgs/category-preworkout.png"
             alt="Предтренировочный комплекс"
-            class="w-40 h-40 md:w-48 md:h-48 object-contain flex-shrink-0"
+            class="w-40 h-40 md:w-48 md:h-48 object-contain shrink-0"
           />
         </router-link>
 
         <!-- Другие категории -->
         <router-link
           to="/catalog?category=6"
-          class="bg-[#196950] rounded-4xl p-6 flex flex-col items-center justify-center text-white hover:shadow-2xl transition block"
+          class="bg-[#196950] rounded-4xl p-6 flex flex-col items-center justify-center text-white hover:shadow-2xl transition"
         >
           <p class="text-lg md:text-xl font-bold mb-4 text-center">Другие категории</p>
           <img src="/imgs/category-other.png" alt="Другие категории" class="w-32 h-32 md:w-40 md:h-40 object-contain" />

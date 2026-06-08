@@ -21,7 +21,10 @@
     <p class="text-lg md:text-lg font-bold text-gray-900 mb-4">{{ product.price }} ₽</p>
 
     <!-- Кнопка -->
-    <button @click.stop="handleAddToCart" class="mt-auto bg-[#196950] text-white py-2 rounded-full text-sm hover:bg-[#0F4D3C] transition">
+    <button
+      @click.prevent.stop="handleAddToCart"
+      class="mt-auto bg-[#196950] text-white py-2 rounded-full text-sm hover:bg-[#0F4D3C] transition"
+    >
       В корзину
     </button>
   </router-link>

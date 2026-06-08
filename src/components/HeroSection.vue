@@ -1,9 +1,9 @@
 <template>
   <section class="relative w-full h-[600px] md:h-[900px] overflow-hidden">
-    <!-- Картинка фоном -->
+    <!-- Картинка фоновая -->
     <img src="/imgs/hero-img-full.png" alt="Спортивное питание" class="absolute inset-0 w-full h-full object-cover z-0" />
 
-    <!-- Текст поверх картинки -->
+    <!-- Текст -->
     <div class="relative z-10 max-w-7xl mx-auto px-6 pt-20 md:pt-32">
       <h1 class="text-2xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 md:mb-6 max-w-4xl leading-tight">
         Добро пожаловать в "Мускул" — ваш источник энергии и силы!

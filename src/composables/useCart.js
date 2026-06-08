@@ -2,7 +2,7 @@ import { ref, computed, watch } from "vue";
 
 const CART_KEY = "muscle-cart";
 
-// Загружаем корзину из localStorage при старте
+// загружаем корзину из localStorage при старте
 const loadCart = () => {
   try {
     const saved = localStorage.getItem(CART_KEY);
@@ -14,7 +14,7 @@ const loadCart = () => {
 
 const cartItems = ref(loadCart());
 
-// Сохраняем в localStorage при каждом изменении
+// сохраняем в localStorage при каждом изменении
 watch(
   cartItems,
   (newCart) => {
@@ -62,7 +62,7 @@ export const useCart = () => {
     cartItems.value = [];
   };
 
-  // Общее количество товаров (для бейджа в header)
+  // Общее количество товаров (для хэдера)
   const totalCount = computed(() => cartItems.value.reduce((sum, item) => sum + item.quantity, 0));
 
   // Общая сумма

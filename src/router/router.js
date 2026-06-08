@@ -28,14 +28,12 @@ const router = createRouter({
   history: createWebHistory(),
   routes,
   scrollBehavior(to, from, savedPosition) {
-    // Если есть hash — скроллим к якорю
     if (to.hash) {
       return {
         el: to.hash,
         behavior: "smooth",
       };
     }
-    // Иначе наверх страницы
     return { top: 0 };
   },
 });

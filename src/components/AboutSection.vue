@@ -4,12 +4,12 @@
       <!-- Заголовок -->
       <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-8 md:mb-12">О нас</h2>
 
-      <!-- Контент: картинка + текст -->
+      <!-- Картинка + текст -->
       <div class="flex flex-col md:flex-row gap-8 md:gap-12">
-        <!-- Картинка с кнопкой play -->
+        <!-- Картинка с кнопкой-->
         <div class="relative w-full md:w-1/2 rounded-2xl overflow-hidden">
           <img src="/imgs/about-img.jpg" alt="О компании" class="w-full h-auto object-cover" />
-          <!-- Кнопка play -->
+          <!-- Кнопка-->
           <button
             class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white/50 w-12 h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center hover:bg-white transition shadow-lg"
           >
@@ -24,7 +24,7 @@
           </button>
         </div>
 
-        <!-- Текст -->
+        <!--Текст -->
         <div class="w-full md:w-2/3">
           <p class="text-sm md:text-base text-gray-700 mb-4 md:mb-6 leading-relaxed">
             Мы — команда энтузиастов, стремящихся помочь вам достичь фитнес-целей с помощью качественного спортивного питания. В нашем

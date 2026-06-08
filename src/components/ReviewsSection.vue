@@ -14,7 +14,7 @@
         <p class="text-red-500">{{ error }}</p>
       </div>
 
-      <!-- Swiper с отзывами -->
+      <!-- Свайпер с отзывами -->
       <div v-else class="relative">
         <Swiper
           :modules="modules"
@@ -36,7 +36,7 @@
                 </p>
               </div>
 
-              <!-- Рейтинг (звёзды) -->
+              <!-- Рейтинг (звёздочки) -->
               <div class="flex gap-1 mb-3">
                 <svg
                   v-for="star in 5"
@@ -54,14 +54,14 @@
                 </svg>
               </div>
 
-              <p class="text-sm md:text-base text-gray-700 leading-relaxed flex-grow">
+              <p class="text-sm md:text-base text-gray-700 leading-relaxed grow">
                 {{ review.text }}
               </p>
             </div>
           </SwiperSlide>
         </Swiper>
 
-        <!-- Пагинация вне Swiper -->
+        <!-- Пагинация -->
         <div class="reviews-pagination flex justify-center gap-2 mt-8"></div>
       </div>
     </div>
@@ -125,7 +125,7 @@ onMounted(() => {
 </script>
 
 <style>
-/* стилизация точек пагинации */
+/* стили точек пагинации */
 .reviews-pagination .swiper-pagination-bullet {
   width: 8px;
   height: 8px;

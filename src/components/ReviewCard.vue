@@ -27,7 +27,7 @@
       </svg>
     </div>
 
-    <p class="text-sm md:text-base text-gray-700 leading-relaxed flex-grow">
+    <p class="text-sm md:text-base text-gray-700 leading-relaxed grow">
       {{ review.text }}
     </p>
   </div>

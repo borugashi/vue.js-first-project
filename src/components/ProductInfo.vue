@@ -13,47 +13,47 @@
     <!-- Товар -->
     <div v-else-if="product" class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
       <!-- Блок с картинками-->
-      <div class="flex gap-4">
-        <!-- Маленькие превью -->
-        <div class="hidden lg:flex flex-col gap-4 w-1/3 flex-shrink-0">
+      <div class="flex gap-4 items-stretch h-[580px]">
+        <!-- Превьюшки -->
+        <div class="hidden lg:flex flex-col gap-4 w-1/3 shrink-0">
           <div
             v-for="i in 3"
             :key="i"
-            class="rounded-xl border-2 border-[#196950] overflow-hidden cursor-pointer hover:opacity-80 transition"
+            class="rounded-xl border-3 border-[#196950] overflow-hidden cursor-pointer hover:opacity-80 transition"
           >
             <img
               :src="product.image || '/imgs/placeholder-product.png'"
               :alt="`${product.name} - вид ${i}`"
-              class="w-full h-24 object-cover"
+              class="w-full h-full object-cover"
             />
           </div>
         </div>
 
         <!-- Большая картинка-->
-        <div class="flex-1 rounded-2xl border-2 border-[#196950] overflow-hidden">
+        <div class="flex-1 rounded-2xl border-3 border-[#196950] overflow-hidden">
           <img :src="product.image || '/imgs/placeholder-product.png'" :alt="product.name" class="w-full h-auto object-cover" />
         </div>
       </div>
 
       <!-- Информация о товаре -->
       <div>
-        <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+        <h1 class="text-3xl md:text-4xl font-bold text-[#196950] mb-6">
           {{ product.name }}
         </h1>
 
         <div class="space-y-4 mb-8">
           <div class="flex justify-between border-b border-gray-200 pb-2">
-            <span class="text-gray-600">Вес товара, г:</span>
+            <span class="text-[#196950]">Вес товара, г:</span>
             <span class="font-semibold text-gray-900">{{ product.weight }}</span>
           </div>
 
           <div class="flex justify-between border-b border-gray-200 pb-2">
-            <span class="text-gray-600">Вкусовой акцент (вкус):</span>
+            <span class="text-[#196950]">Вкусовой акцент (вкус):</span>
             <span class="font-semibold text-gray-900">{{ product.flavor }}</span>
           </div>
 
           <div class="flex justify-between border-b border-gray-200 pb-2">
-            <span class="text-gray-600">Состав:</span>
+            <span class="text-[#196950]">Состав:</span>
             <span class="font-semibold text-gray-900">{{ product.composition }}</span>
           </div>
         </div>
